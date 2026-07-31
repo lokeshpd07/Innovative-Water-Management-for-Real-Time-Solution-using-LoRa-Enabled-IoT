@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AquaSense IMS Backend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        h1 { margin-top: 0; }
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .endpoint {
+            background: rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌊 AquaSense IMS Backend</h1>
+        <p>LoRa Water Management System Backend - Powered by Vercel</p>
+        
+        <h2>Available Endpoints:</h2>
+        
+        <div class="endpoint">
+            <strong>Health Check</strong><br>
+            <code>GET /api/health</code><br>
+            Returns backend status
+        </div>
+        
+        <div class="endpoint">
+            <strong>TTN Webhook</strong><br>
+            <code>POST /api/ttn-webhook</code><br>
+            Receives sensor data from The Things Network
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9em;">
+            Backend is running ✅<br>
+            Configure your TTN webhook to: <code>/api/ttn-webhook</code>
+        </p>
+    </div>
+</body>
+</html>
