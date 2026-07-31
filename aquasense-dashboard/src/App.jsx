@@ -7,6 +7,15 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-blue-50">
+      {/* ── Demo Notice Banner ─────────────────────────────────────────── */}
+      <div className="sticky top-0 z-50 bg-amber-400 text-amber-900 text-center text-sm font-semibold py-2 px-4 shadow-md flex items-center justify-center gap-2">
+        <span>🧪</span>
+        <span>
+          This is a <strong>demo version</strong> of AquaSense IMS — all sensor readings are simulated and do not reflect real device data.
+        </span>
+        <span>🧪</span>
+      </div>
+
       {/* Navigation Bar */}
       <nav className="bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 py-4">
